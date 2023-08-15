@@ -1,4 +1,13 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "module":"CommonJS",
+    "target": "es2020",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "noImplicitAny": false
+  }
 }

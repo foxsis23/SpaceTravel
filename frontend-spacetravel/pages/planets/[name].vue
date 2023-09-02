@@ -8,13 +8,14 @@ const route = useRoute()
 planetStore.getPlanetByName(route.params.name)
 
 const {planetName} = storeToRefs(planetStore)
+
 </script>
 
 <template>
     <NuxtLayout name="default">
-        <planetDetailCard :price="planetName.price"
-        :name="planetName.name" :second_image="planetName.second_image"
-        :sub_description="planetName.sub_description"
+        <planetDetailCard :price="planetName.getPlanetByName.price"
+        :name="planetName.getPlanetByName.name" :second_image="planetName.getPlanetByName.second_image"
+        :sub_description="planetName.getPlanetByName.sub_description"
          />
     </NuxtLayout>
 </template>

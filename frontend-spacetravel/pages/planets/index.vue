@@ -15,7 +15,7 @@ const {allPlanets} = storeToRefs(planetStore)
     <h1 class="text-center font-bold mt-20 text-4xl">Planets in our Solar System</h1>
 
     <div class="flex flex-row justify-center flex-wrap max-w-1/2">
-        <planetCard v-for="{name,image,description} in allPlanets"
+        <planetCard v-for="{name,image,description} in allPlanets.getAllPlanets"
         :name="name" :image="image" :description="description"
          />
     </div>

@@ -1,15 +1,14 @@
 import {defineStore} from 'pinia'
 
 
-
 export const usePlanetStore = defineStore('planetStore',{
     state:() => ({
-        planets:{},
-        planetByName:{}
+        planets:[] as any,
+        planetByName:{} as any
     }),
     getters:{
-        allPlanets:(state) => state.planets.getAllPlanets,
-        planetName:(state) => state.planetByName.getPlanetByName
+        allPlanets:(state) => state.planets,
+        planetName:(state) => state.planetByName
     },
     actions:{
          async getPlanets(){

@@ -18,7 +18,6 @@ onMounted(() =>{
     watchEffect(() =>{
         if(user.value){
             navigateTo('/planets')
-            console.log(user.value)
         }
     })
 })
